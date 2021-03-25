@@ -8,9 +8,9 @@ PS > . .\Templating.ps1
 PS > CreateBy-Template <template-name> <component-name>
 ```
 
-It takes files from `./templates` directory which starts with `wtm-component`.
+It takes files from `./templates` directory which starts with `template-name`.
 Then it produces the component files within the working directory.
-Each of the files will have the name `my-component` with the corresponding to the template extension.
+Each of the files will have the name `component-name` with the corresponding to the template extension.
 
 ### Example
 ```
