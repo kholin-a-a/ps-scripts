@@ -3,14 +3,24 @@ PowerShell automation scripts for routine tasks
 
 ## Templating
 
+First of all you need to import `Templating` module into the current PowerShell session:
 ```
 PS > . .\Templating.ps1
-PS > CreateBy-Template <template-name> <component-name>
 ```
 
+Produce component files using the templates:
+```
+PS > CreateBy-Template <template-name> <component-name>
+```
 It takes files from `./templates` directory which start with `template-name`.
 Then it produces the component files within the working directory.
 Each of the files will have the name `component-name` with the corresponding to the template extension.
+
+
+List all available template names:
+```
+PS > List-Template
+```
 
 ### Example
 ```
