@@ -22,6 +22,21 @@
         }
 }
 
+function List-Template {
+    param (
+        [string]$TemplatePath = "$PSScriptRoot\templates"
+    )
+
+    Get-ChildItem $TemplatePath |
+        Select -ExpandProperty BaseName |
+            Unique |
+                Sort
+}
+
+
+
+# Help funstions
+
 function Escape-Characters {
     param (
         [Parameter(ValueFromPipeline)]
